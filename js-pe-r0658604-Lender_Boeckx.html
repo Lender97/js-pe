@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>PE Opdracht</title>
+</head>
+
+<body id="hoofdpagina">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Anoroc Services</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Registreer</h1>
+        <p class="lead">Meld je aan bij Anaroc services, wij beschermen jouw software tegen malware!</p>
+        <form action="registreren.php" method="post">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="mb-3">
+                        <label for="voornaam" class="form-label">Voornaam</label>
+                        <input type="text" class="form-control" id="voornaam" placeholder="Uw voornaam">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="mb-3">
+                        <label for="naam" class="form-label">Naam</label>
+                        <input type="text" class="form-control" id="naam" placeholder="Uw naam">
+                    </div>
+                </div>
+                <div id="divVerbergen">
+                    <div id="divFoutmeldingen">
+
+                    </div>
+                    <div id="divBetaalwijze">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <label for="gebruikersnaam" class="form-label">Gebruikersnaam</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="gebruikersnaam">@</span>
+                        <input type="text" class="form-control" placeholder="u911236" id="gebruikersnaam1">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="mb-3">
+                        <label for="mailadres" class="form-label">E-mailadres</label>
+                        <input type="text" class="form-control" id="mailadres" placeholder="mail@example.be">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="invoerWachtwoord" class="form-label">Wachtwoord</label>
+                    <input type="password" class="form-control" id="invoerWachtwoord">
+                </div>
+                <div class="col-sm">
+                    <label for="herhaalWachtwoord" class="form-label">Herhaal wachtwoord</label>
+                    <input type="password" class="form-control" id="herhaalWachtwoord">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="mb-3">
+                        <label for="adres" class="form-label">Adres</label>
+                        <input type="text" class="form-control" id="adres" placeholder="Uw adres en huisnummer">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="dropdownMenuLand" class="form-label">Land</label>
+                    <div class="mb-3">
+                        <div class="btn-group">
+                            <select class="btn btn-secondary dropdown-toggle" id="dropdownMenuLand">
+                                <option value="">Kies een land</option>
+                                <option>België</option>
+                                <option>Nederland</option>
+                                <option>Frankrijk</option>
+                                <option>Duitsland</option>
+                                <option>Italië</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <label for="dropdownMenuProvincie" class="form-label">Provincie</label>
+                    <div class="mb-3">
+                        <div class="btn-group">
+                            <select class="btn btn-secondary dropdown-toggle" id="dropdownMenuProvincie">
+                                <option value="">Kies een provincie</option>
+                                <option>Antwerpen</option>
+                                <option>Oost-Vlaanderen</option>
+                                <option>West-Vlaanderen</option>
+                                <option>Vlaams-Brabant</option>
+                                <option>Limburg</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <label for="postcode" class="form-label">Postcode</label>
+                    <div class="mb-3">
+                        <input type="text" class="form-control btn-secondary dropdown-toggle" id="postcode">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm">
+                    <h3>Hou me op de hoogte</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkBoxNieuwsbrief">
+                        <label class="form-check-label" for="checkBoxNieuwsbrief">
+                          Inschrijven voor onze nieuwsbrief
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkBoxVoorwaarden">
+                        <label class="form-check-label" for="checkBoxVoorwaarden">
+                          Ik ga akkoord met de algemene voorwaarden
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h3>Betaling</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="rbgBetaling" id="rb1" value="Banking app" checked>
+                        <label class="form-check-label" for="rb1">
+                          Banking app
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="rbgBetaling" id="rb2" value="Overschrijving">
+                        <label class="form-check-label" for="rb2">
+                          Overschrijving
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="rbgBetaling" id="rb3" value="Visa card">
+                        <label class="form-check-label" for="rb3">
+                          Visa card
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="rbgBetaling" id="rb4" value="Paypal">
+                        <label class="form-check-label" for="rb4">
+                          Paypal
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <button id="btnValidate" type="button" class="btn btn-primary">Wave your magic wand</button>
+            </div>
+
+        </form>
+    </main>
+    <script>
+        //javascript code
+        //variabelen declareren en element aanspreken
+        let errors = []
+        let divVerbergen = document.querySelector("#divVerbergen")
+        let pBetaalwijze = document.createElement("p")
+
+
+        //div foutmeldingen verbergen
+        window.addEventListener("load", function() {
+            divVerbergen.style.display = "none"
+        })
+
+        //functies aanmaken
+        //velden controleren op eventueel niet ingevoerde waarde (lege velden)
+        let checkEmptyField = (veld, melding) => {
+            let object = document.querySelector(veld).value
+
+            if (object == "") {
+                errors.push(melding)
+                return true
+            }
+
+        }
+
+        //ingevoer mailadres controleren
+        let validateEmail = (mailadres) => {
+            //https://www.w3resource.com/javascript/form/email-validation.php
+            let mailformaat = /^\w+([\.-]?\w+)*@[a-z0-9]+([\.-]?\w+)*(\.\w{2,3})+$/
+
+            if (mailadres.match(mailformaat)) {
+
+                return true
+            } else {
+                return false
+            }
+        }
+
+        //ingevoerd wachtwoord controleren
+        let validatePassword = (veld1, veld2) => {
+            let eersteWachtwoord = document.querySelector(veld1).value
+            let herhalingWachtwoord = document.querySelector(veld2).value
+
+            if (eersteWachtwoord.length > 7) {
+                if (eersteWachtwoord != herhalingWachtwoord) {
+                    errors.push("De wachtwoorden komen niet overeen.")
+                }
+            } else {
+                errors.push("Het wachtwoord moet minstens 8 tekens lang zijn.")
+            }
+        }
+
+        //de geselecteerde waarde bij betalingsmogelijkheid opvragen
+        let validatePayment = (veld) => {
+            let betaalwijze
+            let radiobuttons = document.getElementsByName(veld)
+
+            radiobuttons.forEach(element => {
+                if (element.checked) {
+                    betaalwijze = element.value
+                }
+            });
+
+            //de p tag betaalwijze aanmaken en opvullen
+            pBetaalwijze.textContent = `Je betaalwijze is ${betaalwijze}`
+        }
+
+        //de ingevoerde postcode controleren
+        let checkPC = (veld) => {
+            let postcode = document.querySelector(veld).value
+
+            if (postcode < 1000 || postcode >= 10000) {
+                errors.push("De waarde van de postcode moet tussen 1000 en 9999 liggen.")
+            }
+        }
+
+        //de ingevoerde gebruikersnaam controleren
+        let validateUsername = (veld) => {
+            //https://regex101.com/ gebruikt om de regular expression te testen tot deze werkte, de expressie zelf samengesteld
+            let gebruikersnaam = document.querySelector("#gebruikersnaam1").value
+
+            if (gebruikersnaam.length >= 1) {
+
+                if (gebruikersnaam.charAt(0) == "." || gebruikersnaam.charAt(0) == ";") {
+                    errors.push("De gebruikersnaam mag geen punt of koppelteken als eerste karakter bevatten.")
+                }
+                if (gebruikersnaam == /^[A-Za-z0-9_]+([.-]?\w+)+$/) {
+                    errors.push("De gebruikersnaam mag enkel een punt, een koppelteken of een underscore als speciaal teken bevatten")
+                }
+            } else {
+                errors.push("de gebruikersnaam moet minstens 1 karakter lang zijn.")
+            }
+        }
+
+        let validateForm = () => {
+            let mailadres = document.querySelector("#mailadres").value
+
+            //lege velden controleren
+            checkEmptyField("#voornaam", "Voornaam moet ingevuld zijn.")
+            checkEmptyField("#naam", "Familienaam moet ingevuld zijn.")
+            checkEmptyField("#adres", "Adres moet ingevuld zijn.")
+            checkEmptyField("#dropdownMenuLand", "Land moet ingevuld zijn.")
+            checkEmptyField("#dropdownMenuProvincie", "Provincie moet ingevuld zijn.")
+
+
+
+            //veld en formaat mailadres controleren
+            if (!checkEmptyField("#mailadres", "Mailadres moet ingevuld zijn.")) {
+                if (!validateEmail(mailadres)) {
+                    errors.push("E-mailadres is niet correct.")
+                }
+            }
+
+            //wachtwoord controleren
+            if (!checkEmptyField("#invoerWachtwoord", "Wachtwoord moet ingevuld zijn.") || !checkEmptyField("#herhaalWachtwoord", "Herhaal wachtwoord moet ingevuld zijn.")) {
+                validatePassword("#invoerWachtwoord", "#herhaalWachtwoord")
+            }
+
+            //gebruikersnaam controleren
+            if (!checkEmptyField("#gebruikersnaam1", "Gebruikersnaam moet ingevuld zijn.")) {
+                validateUsername("#gebruikersnaam1")
+            }
+
+            //postcode controleren
+            if (!checkEmptyField("#postcode", "Postcode moet ingevuld zijn.")) {
+                checkPC("#postcode")
+            }
+            //nakijken of de algemene voorwaarden geaccepteerd zijn
+            if (!document.querySelector("#checkBoxVoorwaarden").checked) {
+                errors.push("Algemene voorwaarden moeten geaccepteerd worden.")
+            }
+
+            //nakijken welke betaalwijze er gekozen is
+            validatePayment("rbgBetaling")
+
+            //div voor errors of success weergeven
+            divVerbergen.style.display = "inline-block"
+            divVerbergen.setAttribute("class", "col-sm")
+
+            //html elementen aanmaken
+            let divFoutmeldingen = document.querySelector("#divFoutmeldingen")
+            let divBetaalwijze = document.querySelector("#divBetaalwijze")
+            let lijstelement = document.createElement("ul")
+            let titelResultaat = document.createElement("h4")
+            let titelBetaalwijze = document.createElement("h4")
+
+            //informatie op de pagina weergeven
+            if (errors.length != 0) {
+
+                //een class toevoegen aan het div element
+                divFoutmeldingen.setAttribute("class", "mb-3 alert alert-danger")
+                divFoutmeldingen.setAttribute("role", "alert")
+
+                //titel weergeven en lijst maken
+                titelResultaat.textContent = "Yikes, errors.."
+                divFoutmeldingen.append(titelResultaat)
+
+                divFoutmeldingen.append(lijstelement)
+
+                for (let i = 0; i < errors.length; i++) {
+                    let lijstItem = document.createElement("li")
+
+                    lijstItem.textContent = errors[i]
+                    lijstelement.appendChild(lijstItem)
+                }
+            } else {
+                //een class toevoegen aan het div element
+                divFoutmeldingen.setAttribute("class", "mb-3 alert alert-success")
+                divFoutmeldingen.setAttribute("role", "alert")
+                divBetaalwijze.setAttribute("class", "alert alert-primary")
+                divBetaalwijze.setAttribute("role", "alert")
+
+                //p-tags aanmaken
+                let pSuccess = document.createElement("p").textContent = "Aww yeah, je werd geregistreerd."
+
+
+                //inhoud aan resultaat success geven
+                titelResultaat.textContent = "Goed gedaan!"
+                divFoutmeldingen.append(titelResultaat)
+                divFoutmeldingen.append(pSuccess)
+
+                //inhoud aan resultaat betaalwijze geven
+                titelBetaalwijze.textContent = "Betalingswijze"
+                divBetaalwijze.append(titelBetaalwijze)
+                divBetaalwijze.append(pBetaalwijze)
+
+            }
+        }
+
+        //eventlisteners toevoegen en functies uitvoeren
+        document.querySelector("#btnValidate").addEventListener("click", function() {
+            validateForm()
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
